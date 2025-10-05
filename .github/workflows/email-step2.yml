@@ -1,0 +1,19 @@
+name: Email Step2 Workflow
+
+on:
+  workflow_dispatch:   # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  test:
+    name: Test Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 21f3000401@ds.study.iitm.ac.in
+        run: echo "Hello, world! This action step includes my email address."
+
+      - name: Confirm success
+        run: echo "Workflow ran successfully ✅"
